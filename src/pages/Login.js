@@ -6,6 +6,12 @@ class Login extends Component {
     this.state = {
       pagina: 'Login',
     };
+    this.onLogin = this.onLogin.bind(this);
+  }
+
+  onLogin() {
+    const { history } = this.props;
+    history.push('/map');
   }
 
   render() {
