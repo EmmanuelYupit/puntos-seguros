@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { IonContent } from "@ionic/react";
+import ProfileForm from "../components/ProfileForm/index";
 
 const usertMockData = {
   imagen: '',
@@ -50,8 +52,11 @@ class Profile extends Component {
   }
 
   render() {
-    const { pagina } = this.state;
-    return <div>{`Hola Mundo! estas en: ${pagina}`}</div>;
+    return (
+      <IonContent>
+        <ProfileForm></ProfileForm>
+      </IonContent>
+    );
   }
 }
 
