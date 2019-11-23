@@ -5,7 +5,18 @@ class Point extends Component {
     super(props);
     this.state = {
       pagina: 'Point',
+      point: {},
+      currentPoint: 0,
     };
+  }
+
+  componentDidMount() {
+    const { match: { params: { id: pointId } } } = this.props;
+    // TODO: getPoint with Mock data
+    this.setState(() => {
+      const point = {};
+      return { currentPoint: pointId, point };
+    });
   }
 
   render() {
