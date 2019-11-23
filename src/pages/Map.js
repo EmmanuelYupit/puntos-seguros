@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MapComponent from '../components/map';
-import QuikNavComponent from '../components/quiknav'
+import QuikNavComponent from '../components/quiknav';
+import HeaderComponent from '../components/header';
 
 class Map extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class Map extends Component {
     const { pagina } = this.state;
     return (
       <>
-        {`Hola Mundo! estas en: ${pagina}`}
+        <HeaderComponent title={pagina} />
         <MapComponent />
         <QuikNavComponent />
       </>

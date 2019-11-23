@@ -12,9 +12,9 @@ const QuikNavComponent = () => {
         <IonFabButton color="light">
             <IonIcon icon={call} />
         </IonFabButton>
-        <IonFabButton color="light">
+        {/*<IonFabButton color="light">
             <IonIcon icon={more} />
-        </IonFabButton>
+    </IonFabButton>*/}
     </NavWrapp>)
 }
 
