@@ -6,6 +6,12 @@ class Register extends Component {
     this.state = {
       pagina: 'Register',
     };
+    this.handleUserRegister = this.handleUserRegister.bind(this);
+  }
+
+  handleUserRegister() {
+    const { history } = this.props;
+    history.push('/login');
   }
 
   render() {
