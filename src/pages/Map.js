@@ -11,6 +11,7 @@ class Map extends Component {
 
     this.showRegisterPointModal = this.showRegisterPointModal.bind(this);
     this.hideRegisterPointModal = this.hideRegisterPointModal.bind(this);
+    this.handleRegisterPoint = this.handleRegisterPoint.bind(this);
   }
 
   showRegisterPointModal() {
