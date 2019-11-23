@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import MapComponent from '../components/map';
+import QuikNavComponent from '../components/quiknav'
 
 class Map extends Component {
   constructor(props) {
@@ -10,7 +12,13 @@ class Map extends Component {
 
   render() {
     const { pagina } = this.state;
-    return <div>{`Hola Mundo! estas en: ${pagina}`}</div>;
+    return (
+      <>
+        {`Hola Mundo! estas en: ${pagina}`}
+        <MapComponent />
+        <QuikNavComponent />
+      </>
+    );
   }
 }
 
