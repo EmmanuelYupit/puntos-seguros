@@ -1,5 +1,15 @@
 import React, { Component } from 'react';
 
+const pointMockData = {
+  latitud: 21.1660439,
+  longitud: -86.8204977,
+  imagen: '',
+  nombre: 'Foo Point',
+  description: 'Bar point description',
+  radio: 5,
+  motivos: ['bien ioluminado', 'pasa mucho transporte publico', 'hay policias cerca'],
+};
+
 class Point extends Component {
   constructor(props) {
     super(props);
@@ -12,11 +22,7 @@ class Point extends Component {
 
   componentDidMount() {
     const { match: { params: { id: pointId } } } = this.props;
-    // TODO: getPoint with Mock data
-    this.setState(() => {
-      const point = {};
-      return { currentPoint: pointId, point };
-    });
+    this.setState({ currentPoint: pointId, point: { ...pointMockData } });
   }
 
   render() {
