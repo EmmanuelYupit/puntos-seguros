@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {
+  IonContent,
+} from '@ionic/react';
 import MapComponent from '../components/map';
 import QuikNavComponent from '../components/quiknav';
 import HeaderComponent from '../components/header';
@@ -35,11 +38,11 @@ class Map extends Component {
   render() {
     const { pagina } = this.state;
     return (
-      <>
+      <IonContent>
         <HeaderComponent title={pagina} />
         <MapComponent />
         <QuikNavComponent />
-      </>
+      </IonContent>
     );
   }
 }

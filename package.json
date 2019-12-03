@@ -28,6 +28,7 @@
     "typescript": "3.6.3"
   },
   "scripts": {
+    "dev": "REACT_APP_GOOGLE_KEY=AIzaSyACEikrmi_M_6M0bdE6MzX_R_IgcMfZk7g yarn start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
